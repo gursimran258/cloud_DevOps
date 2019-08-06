@@ -39,14 +39,7 @@
 </ul>
 <h1 id="cloud-architecture-diagram">Cloud Architecture Diagram</h1>
 <ul>
-<li>trading app diagram
-<ul>
-<li>use <a href="http://draw.io/">draw.io</a> and aws icons (it’s in the <a href="http://draw.io/">draw.io</a> library)</li>
-<li>include ec2, alb, auto scaling, target group, rds</li>
-<li>security groups</li>
-<li>label all important ports(e.g. ALB HTTP, ec2 tpc:5000, RDS tcp:5432)</li>
-</ul>
-</li>
+<li>trading app diagram  -see the diagram in cloud dep</li>
 </ul>
 <h1 id="elastic-beanstalk-todo">Elastic Beanstalk (TODO)</h1>
 <h1 id="jenkins-cicd-pipeline-todo">Jenkins CI/CD pipeline (TODO)</h1>
