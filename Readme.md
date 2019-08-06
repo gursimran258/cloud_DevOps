@@ -4,8 +4,9 @@
 ---
 
 <h1 id="introduction">Introduction</h1>
-<p>What project you will deploy and project GitHub URL (your implementation is preferred)<br>
-Describe your project at a high level (microserver, psql, java)</p>
+<p>This repository contains the process to deploy the java project on the cloud. The project used to deploy is Trading Application:<br>
+<a href="https://github.com/gursimran258/Trading_App">https://github.com/gursimran258/Trading_App</a></p>
+<p>This project is a microservice in java configured using Springboot framework with database in PostgreSQL database. It consumes IEX cloud API.</p>
 <h1 id="docker-architecture-diagram">Docker Architecture Diagram</h1>
 <ul>
 <li>
