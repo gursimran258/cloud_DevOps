@@ -4,9 +4,9 @@
 ---
 
 <h1 id="introduction">Introduction</h1>
-<p>This repository contains the process to deploy the java project on the cloud. The project used to deploy is Trading Application:<br>
-<a href="https://github.com/gursimran258/Trading_App">https://github.com/gursimran258/Trading_App</a></p>
-<p>This project is a microservice in java configured using Springboot framework with database in PostgreSQL database. It consumes IEX cloud API.</p>
+<p>This repository contains the deployment of Java application on cloud. The application that is deployed on AWS is:<br>
+<a href="https://github.com/gursimran258/trading_application">https://github.com/gursimran258/trading_application</a></p>
+<p>This application is primarily a virtual trading application. It is a microservice in java configured using Springboot framework with database in PostgreSQL database. It consumes IEX cloud API.</p>
 <h1 id="docker-architecture-diagram">Docker Architecture Diagram</h1>
 <ul>
 <li>
@@ -43,4 +43,7 @@
 </ul>
 <h1 id="elastic-beanstalk-todo">Elastic Beanstalk (TODO)</h1>
 <h1 id="jenkins-cicd-pipeline-todo">Jenkins CI/CD pipeline (TODO)</h1>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
 
