@@ -1,7 +1,3 @@
----
-
-
----
 
 <h1 id="introduction">Introduction</h1>
 <p>This repository contains the deployment of Java application on cloud. The application that is deployed on AWS is:<br>
