@@ -3,8 +3,7 @@
 <a href="https://github.com/gursimran258/Trading_App">https://github.com/gursimran258/Trading_App</a></p>
 <p>This project is a microservice in java configured using Springboot framework. The primary goals for this simulation REST API are registering traders, managing their accounts, buying or selling stocks, and retrieveing the quores from IEX cloud.</p>
 <h1 id="docker-architecture-diagram">Docker Architecture Diagram</h1>
-<p>The trading application is dockerized in order to make deployment on AWS easy.  Creating docker container for the application and successfully running the container ensures that it will run successfully on other machines that can run docker. Following is the diagram illustrating the creation of docker images and running the docker containers of the created images.<br>
-Architecture diagram:</p>
+<p>The trading application is dockerized in order to make deployment on AWS easy.  Creating docker container for the application and successfully running the container ensures that it will run successfully on other machines that can run docker. Following is the diagram illustrating the creation of docker images and running the docker containers of the created images.<br>Architecture diagram:</p>
 <img src="https://github.com/gursimran258/cloud_devOps/blob/master/assets/dckr.jpg">
 <p>Following are the steps followed to dockerize the application:</p>
 <ol>
