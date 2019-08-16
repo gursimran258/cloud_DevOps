@@ -28,11 +28,16 @@ In the process of building the docker images, these docker commands pull the nec
 <code>sudo docker run --rm --name jrvs-psql \ -e POSTGRES_PASSWORD=password \ -e POSTGRES_DB=jrvstrading \ -e POSTGRES_USER=postgres \ --network trading-net \ -d -p 5432:5432 jrvs-psql</code></li>
 </ol>
 <p>For trading application:<br>
-<code>sudo docker run \ -e "PSQL_URL=jdbc:postgresql://jrvs-psql:5432/jrvstrading" \ -e "PSQL_USER=postgres" \ -e 'PSQL_PASSWORD=password' \ -e "IEX_PUB_TOKEN=pk_a64ce3b0cf104936be6b9d3edf7de437" \ --network trading-net \ -p 5000:5000 -t trading-app</code></p>
-<h1 id="cloud-architecture-diagram">Cloud Architecture Diagram</h1>
-<ul>
-<li>trading app diagram  -see the diagram in cloud dep</li>
-</ul>
-<h1 id="elastic-beanstalk">Elastic Beanstalk</h1>
-<h1 id="jenkins-cicd-pipeline">Jenkins CI/CD pipeline</h1>
+<code>sudo docker run \ -e "PSQL_URL=jdbc:postgresql://jrvs-psql:5432/jrvstrading" \ -e "PSQL_USER=postgres" \ -e 'PSQL_PASSWORD=password' \ -e "IEX_PUB_TOKEN=$IEX_TOKEN" \ --network trading-net \ -p 5000:5000 -t trading-app</code></p>
+<h1 id="cloud-architecture">Cloud Architecture</h1>
+<p>This project is deployed on AWS. For this project,   EC2 instance is used to run the project. RDS is an AWS managed DB service on which local database is migrated. EC2 and RDS are provisioned.  Architecture diagram for cloud deployment of application is as follows:</p>
+<h1 id="elastic-beanstalk-and-jenkins-cicd-pipeline">Elastic beanstalk and Jenkins CI/CD pipeline</h1>
+<p>Elastic beanstalk is used to provision prod and dev environments.<br>
+On EC2 instance, jenkins is installed which is provisioned in order to build a pipeline that deploys the latest project source code from GitHub to both dev and prod environment on  Elasticbeanstalk environment. The steps followed for automatic deployment are:</p>
+<ol>
+<li>Download the latest source code from GitHub</li>
+<li>Compile and package source code</li>
+<li>Deploy to dev and prod environment.</li>
+</ol>
+<p>Following diagram illustrates the Jenkins CI/CD pipeline:</p>
 
